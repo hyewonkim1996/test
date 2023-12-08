@@ -4,13 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <style>
-        
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+        body{
+            margin:15px;
+        }
+        header{
+            width:1248px;
+            height:120px;
+            border-bottom: solid 1px;
+        }
+        #title{
+            background: none;
+            background-image: url("https://media4.giphy.com/media/1xoZG97uMdse8NtMsT/giphy.gif?cid=6c09b952jd103bma81ain05omm5tcpjblb9xx7w7j3x0lwba&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s");
+            background-size: contain;
+            background-repeat: no-repeat;
+            font-family: 'Harlow Solid', sans-serif;
+            font-size: 70px;
+    color: #2e2e2e; /* 밝은 분홍색 */
+    text-shadow: 5px 5px 5px #f9bed4; /* 부드러운 그림자 효과 */
+    letter-spacing: 0.01em;
+            width:400px;
+            height:100px;
+            border: none;
+        }
+        #first{
+            margin-left: 670px;
+        }
+        .btn.btn-outline-dark {
+            margin-top: 40px;
+        }
+        .login{
+            display:inline-block;
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            margin-left: 800px;
+            margin-bottom: 100px;
+        }
+        nav{
+            width:1248px;
+            height:150px;
+            background-color: #f9bed4;
+        }
+        nav div{
+            display:inline-block;
+            width:200px;
+            height: 100px;
+        }
+        .menu {
+            background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     </style>
 </head>
 <body>
-    <header>title</header>
-    <nav></nav>
+    <header>
+        <button id="title">Fundee</button>
+        <button type="button" id="first" class="btn btn-outline-dark">Sign in</button>
+        <button type="button" class="btn btn-outline-dark">Sign up</button>
+        
+    </header>
+    <nav>
+        <div>
+            <button class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-dice-5-fill" viewBox="0 0 16 16">
+                    <path d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm2.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM12 13.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zM5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM8 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                  </svg>
+                  Board Game
+            </button>
+        </div>
+        <div>
+            <button class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                    <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                  </svg>
+                  Digital Game
+            </button>
+        </div>
+        <div>
+            <button class="menu"></button>
+
+        </div>
+        <div>
+
+            <button class="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                    <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                  </svg>
+            </button>
+        </div>
+        <button class="menu"></button>
+        <button class="menu"></button>
+        <button class="menu"></button>
+    </nav>
     <section></section>
     <footer></footer>
 </body>
